@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/menu_service_layout_id"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/icon_service"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"/>
+
+        <TextView
+            android:text="Services"
+            android:fontFamily="@font/arbutus_slab"
+            android:textSize="@dimen/_15ssp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_posts_layout_id"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/icon_posts"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"/>
+
+        <TextView
+            android:text="Posts"
+            android:fontFamily="@font/arbutus_slab"
+            android:textSize="@dimen/_15ssp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

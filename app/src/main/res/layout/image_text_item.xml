@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    app:cardCornerRadius="@dimen/_14ssp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/_14sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/image_id"
+        android:scaleType="fitXY"
+        android:src="@drawable/download"
+        android:minHeight="@dimen/_150sdp"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:background="#41FFFFFF"
+        android:id="@+id/text_id"
+        android:textColor="@color/white"
+        android:text="Hi this is dummy text how are man"
+        android:layout_marginBottom="@dimen/_7sdp"
+        android:layout_gravity="bottom|center"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="wrap_content"/>
+
+</androidx.cardview.widget.CardView>

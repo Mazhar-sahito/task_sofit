@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_bg">
+
+        <TextView
+            android:id="@+id/news_text_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arbutus_slab"
+            android:text="Latest News"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/news_text_id" />
+
+
+        <TextView
+            android:id="@+id/payment_history_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="@font/arbutus_slab"
+            android:text="Payment History"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_view_id" />
+
+        <ImageView
+            android:id="@+id/menu_icon_id"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_items"
+            app:layout_constraintBottom_toBottomOf="@+id/payment_history_text"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/history_recycler_view_id"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintTop_toBottomOf="@+id/menu_icon_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/government_services_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:fontFamily="@font/arbutus_slab"
+            android:text="Government Services"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/history_recycler_view_id" />
+
+        <ImageView
+            android:id="@+id/government_services_icon_id"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_items"
+            app:layout_constraintBottom_toBottomOf="@+id/government_services_text_id"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_14sdp"
+            android:minHeight="@dimen/_70sdp"
+            android:gravity="center_vertical"
+            android:background="@drawable/corner_round_white_bg"
+            app:layout_constraintTop_toBottomOf="@+id/government_services_icon_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    app:tint="@color/black"
+                    android:src="@drawable/icon_home"
+                    android:layout_width="@dimen/_24ssp"
+                    android:layout_height="@dimen/_24sdp"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arbutus_slab"
+                    android:text="Services1" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    app:tint="@color/red"
+                    android:src="@drawable/icon_search"
+                    android:layout_width="@dimen/_24ssp"
+                    android:layout_height="@dimen/_24sdp"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arbutus_slab"
+                    android:text="Services2" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    app:tint="@color/colorPrimary"
+                    android:src="@drawable/icon_posts"
+                    android:layout_width="@dimen/_24ssp"
+                    android:layout_height="@dimen/_24sdp"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arbutus_slab"
+                    android:text="Services3" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    app:tint="@color/colorPrimaryDark"
+                    android:id="@+id/posts_icon_id"
+                    android:src="@drawable/icon_posts"
+                    android:layout_width="@dimen/_24ssp"
+                    android:layout_height="@dimen/_24sdp"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:id="@+id/posts_text_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arbutus_slab"
+                    android:text="Services4" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

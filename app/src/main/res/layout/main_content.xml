@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:minHeight="@dimen/_45sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/hamburger_icon_id"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_hamburger"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/_22sdp"/>
+
+        <TextView
+            android:id="@+id/fragment_name_txt_id"
+            android:text="My App"
+            android:fontFamily="@font/arbutus_slab"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="@dimen/_22sdp"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/icon_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/_22sdp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:id="@+id/fragment_container_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_tab"
+        android:gravity="center"
+        android:minHeight="@dimen/_50sdp"
+        android:background="@drawable/top_corner_round_white_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/home_layout_id"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                app:tint="@color/red"
+                android:id="@+id/home_icon_id"
+                android:src="@drawable/icon_home"
+                android:layout_width="@dimen/_24ssp"
+                android:layout_height="@dimen/_24sdp"/>
+
+            <TextView
+                android:textColor="@color/red"
+                android:id="@+id/home_text_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus_slab"
+                android:text="Home" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/service_layout_id"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/service_icon_id"
+                android:src="@drawable/icon_service"
+                android:layout_width="@dimen/_24ssp"
+                android:layout_height="@dimen/_24sdp"/>
+
+            <TextView
+                android:id="@+id/service_text_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus_slab"
+                android:text="Service" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/posts_layout_id"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/posts_icon_id"
+                android:src="@drawable/icon_posts"
+                android:layout_width="@dimen/_24ssp"
+                android:layout_height="@dimen/_24sdp"/>
+
+            <TextView
+                android:id="@+id/posts_text_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus_slab"
+                android:text="Posts" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

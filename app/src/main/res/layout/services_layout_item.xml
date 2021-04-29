@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:background="@drawable/corner_round_white_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_14sdp"
+        android:minHeight="@dimen/_70sdp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/government_services_icon_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                app:tint="@color/black"
+                android:src="@drawable/icon_home"
+                android:layout_width="@dimen/_24ssp"
+                android:layout_height="@dimen/_24sdp"/>
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus_slab"
+                android:text="Services1" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                app:tint="@color/red"
+                android:src="@drawable/icon_search"
+                android:layout_width="@dimen/_24ssp"
+                android:layout_height="@dimen/_24sdp"/>
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus_slab"
+                android:text="Services2" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                app:tint="@color/colorPrimary"
+                android:src="@drawable/icon_posts"
+                android:layout_width="@dimen/_24ssp"
+                android:layout_height="@dimen/_24sdp"/>
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus_slab"
+                android:text="Services3" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout4"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                app:tint="@color/colorPrimaryDark"
+                android:id="@+id/posts_icon_id"
+                android:src="@drawable/icon_posts"
+                android:layout_width="@dimen/_24ssp"
+                android:layout_height="@dimen/_24sdp"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:id="@+id/posts_text_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus_slab"
+                android:text="Services4" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_14sdp"
+        android:minHeight="@dimen/_70sdp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/government_services_icon_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                app:tint="@color/black"
+                android:src="@drawable/icon_home"
+                android:layout_width="@dimen/_24ssp"
+                android:layout_height="@dimen/_24sdp"/>
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus_slab"
+                android:text="Services1" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                app:tint="@color/red"
+                android:src="@drawable/icon_search"
+                android:layout_width="@dimen/_24ssp"
+                android:layout_height="@dimen/_24sdp"/>
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus_slab"
+                android:text="Services2" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                app:tint="@color/colorPrimary"
+                android:src="@drawable/icon_posts"
+                android:layout_width="@dimen/_24ssp"
+                android:layout_height="@dimen/_24sdp"/>
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus_slab"
+                android:text="Services3" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                app:tint="@color/colorPrimaryDark"
+                android:src="@drawable/icon_posts"
+                android:layout_width="@dimen/_24ssp"
+                android:layout_height="@dimen/_24sdp"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus_slab"
+                android:text="Services4" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_14sdp"
+        android:minHeight="@dimen/_70sdp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/government_services_icon_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                app:tint="@color/black"
+                android:src="@drawable/icon_home"
+                android:layout_width="@dimen/_24ssp"
+                android:layout_height="@dimen/_24sdp"/>
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus_slab"
+                android:text="Services1" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                app:tint="@color/red"
+                android:src="@drawable/icon_search"
+                android:layout_width="@dimen/_24ssp"
+                android:layout_height="@dimen/_24sdp"/>
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus_slab"
+                android:text="Services2" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="invisible"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
